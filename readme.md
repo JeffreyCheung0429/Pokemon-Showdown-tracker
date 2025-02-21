@@ -24,27 +24,42 @@ Configuration file for the project.
 
 Directory where the battle logs are saved.
 
+### `requirements.txt`
+
+This file lists the Python dependencies required to run the project.
+
 ## Usage
 
 ### Running the Recorder
 
-1. Ensure you have Python and the required dependencies installed.
+1. Ensure you have Python and the required dependencies installed. You can install the dependencies using:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 1. Configure the `config.ini` file with the appropriate settings.
 1. Run the recorder:
 
-```python main.py```
+    ```bash
+    python main.py
+    ```
 
 ### Converting Logs to HTML
 
 1. Compile the C program `makeLengLengHTML.c` if not already compiled:
 
-```gcc makeLengLengHTML.c -o makeLengLengHTML```
+    ```bash
+    gcc makeLengLengHTML.c -o makeLengLengHTML
+    ```
 
-1. Run the program with the log file as an argument:
+2. Run the program with the log file as an argument:
 
-```./makeLengLengHTML logs/battle-gen9vgc2025regg-1234567890.txt```
+    ```bash
+    ./makeLengLengHTML logs/battle-gen9vgc2025regg-1234567890.txt
+    ```
 
-This will generate an HTML file with the same name as the log file.
+    This will generate an HTML file with the same name as the log file.
 
 ## Configuration
 
